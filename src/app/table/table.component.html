@@ -1,1 +1,27 @@
-<div>table works!</div>
+<table class="table-responsive table-striped">
+	<thead>
+		<tr>
+      <th class="p-3">Username</th>
+			<th class="p-3">Comment</th>
+			<th class="p-3 text-center">OK</th>
+		</tr>
+	</thead>
+	<tbody _ngcontent-c21="">
+		<tr class="cart  border border-muted">
+      <td class="p-3">Mr. John Smith</td>
+			<td class="p-3">
+        <textarea [hidden]="isChecked" [(ngModel)]="userComment" placeholder="userComment"></textarea>
+      </td>
+      <td class="p-3">
+        <div class="custom-control custom-checkbox">
+          <input
+           (click)="toggleCheckbox($event)" [checked]="isChecked" 
+           class="custom-control-input" id="customCheckbox1" name="customCheckbox1" type="checkbox">
+          <label class="custom-control-label" for="customCheckbox1">
+            
+          </label>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
